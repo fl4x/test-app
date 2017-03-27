@@ -1,0 +1,68 @@
+<div class="col-md-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>
+        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+        Contacts Page
+      </h3>
+    </div>
+    <div class="panel-body">
+      <a name="create" id="create" class="btn btn-outline-primary" href="#" role="button">Create</a>
+      <a name="edit" id="edit" class="btn btn-outline-warning" href="#" role="button">Edit</a>
+      <a name="delete" id="delete" class="btn btn-outline-danger" href="#" role="button">Delete</a>
+      <a name="select" id="select" class="btn btn-outline-info" href="#" role="button">Select</a>
+      <br>
+      <br>
+      <table class="table table-striped">
+        <thead class="thead-default">
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Group</th>
+          <th>Description</th>
+          <th>Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td (click)=onSelect() style="cursor: help">{{contact.name}}</td>
+          <td>{{contact.surname}}</td>
+          <td>{{contact.age}}</td>
+          <td>{{contact.group}}</td>
+          <td>{{contact.description}}</td>
+          <td>{{contact.note}}</td>
+        </tr>
+        <tr>
+          <td (click)=onSelect2() style="cursor: help">{{contact2.name}}</td>
+          <td>{{contact2.surname}}</td>
+          <td>{{contact2.age}}</td>
+          <td>{{contact2.group}}</td>
+          <td>{{contact2.description}}</td>
+          <td>{{contact2.note}}</td>
+        </tr>
+        <tr>
+          <td (click)=onSelect3() style="cursor: help">{{contact3.name}}</td>
+          <td>{{contact3.surname}}</td>
+          <td>{{contact3.age}}</td>
+          <td>{{contact3.group}}</td>
+          <td>{{contact3.description}}</td>
+          <td>{{contact3.note}}</td>
+        </tr>
+        <tr>
+          <td (click)=onSelect4() style="cursor: help">{{contact4.name}}</td>
+          <td>{{contact4.surname}}</td>
+          <td>{{contact4.age}}</td>
+          <td>{{contact4.group}}</td>
+          <td>{{contact4.description}}</td>
+          <td>{{contact4.note}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <router-outlet></router-outlet>
+</div>
